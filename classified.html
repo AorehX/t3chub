@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="img/hero-img.svg" rel="favicon" type="image/x-icon">
+    <title>Classified</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        :root {
+            --white: #fefefe;
+            --primary: #7562e0;
+            --dark-mode-S900: #1a1a29;
+            --dark-mode-S1000: #181824;
+            --dark-mode-S200: #31313f;
+            --gradient-1: linear-gradient(180deg, #6473ff 0%, #2134e1 99.99%, #152bf1 100%);
+            --gradient-2: linear-gradient(139deg, #f97878 9.79%, rgba(255, 176, 119, 0.81) 64.34%, rgba(255, 176, 119, 0.81) 90.36%);
+            --gradient-3: linear-gradient(140deg, #f97878 0%, #4052fb 73.99%, #0720ff 100%);
+            --gradient-4: linear-gradient(142deg, #26c8fc 6.46%, #57ecc8 58.9%, #49f5db 93.88%);
+            --primary-light: #74a84a;
+            --primary-dark: #2c541d;
+            --black: #000000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: poppins, sans-serif, arial;
+            background: var(--dark-mode-S900);
+            color: var(--white);
+        }
+
+        section {
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 150px;
+            padding: 30px;
+        }
+
+        .admin h2 {
+            align-items: center;
+            text-align: center;
+        }
+
+        .admin img {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .denied {
+            font-size: 70px;
+            text-transform: uppercase;
+            color: red;
+        }
+
+        .classified-doc img {
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+            border-radius: 30px;
+            margin: 20px;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label .input-btn, .button-btn {
+            background: var(--dark-mode-S200);
+            font-size: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .input-btn, .button-btn:hover {
+            cursor: pointer;
+            color: var(--white);
+            background: var(--gradient-1);
+            transition: 0.5s;
+        }
+
+        .button-btn {
+            align-items: center;
+            margin: 0 auto;
+            width: 140px;
+            background: var(--white);
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="container">
+        <div class="admin">
+            <img alt="" src="img/hero-img.svg">
+            <div class="denied">
+                <p>
+                <h2>access denied</h2>
+                <p>
+            </div>
+        </div>
+        <div class="classified-doc">
+            <img alt="" src="img/admin.jpg">
+        </div>
+        <div class="buttons">
+            <label>
+                <input class="input-btn" placeholder="Enter password" required type="password" typeof="password">
+                <br>
+                <button class="button-btn" id="summit" type="submit">unlock</button>
+            </label>
+        </div>
+    </div>
+</section>
+</body>
+</html>

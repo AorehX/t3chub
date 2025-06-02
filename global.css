@@ -121,7 +121,7 @@ nav {
 
 .title {
     color: var(--primary);
-    
+
     }
 
 .description {
@@ -333,21 +333,21 @@ nav {
     .container {
         width: 90%;
         }
-    
+
     section {
         margin: 60px auto;
         }
-    
+
     #header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         }
-    
+
     .header-img img {
         width: 100%;
         }
-    
+
     .nav-list {
         flex-direction: column;
         background: var(--dark-mode-S200);
@@ -359,34 +359,34 @@ nav {
         padding-top: 30px;
         align-items: center;
         margin-top: -900px;
-        transition: margin 0.5s ease-in;
+        transition: margin 0.5s ease-out;
         }
-    
+
     .nav-list.active {
         margin-top: 0;
         }
-    
+
     .menu {
         display: block;
         width: 30px;
         z-index: 999;
         }
-    
+
     nav {
         padding: 10px;
         }
-    
+
     .contact-container {
         flex-direction: column;
         gap: 30px;
         }
-    
+
     #projects {
         text-align: center;
         align-content: center;
         justify-content: center;
         }
-    
+
     #about-me p, h1 {
         text-align: center;
         align-content: center;
